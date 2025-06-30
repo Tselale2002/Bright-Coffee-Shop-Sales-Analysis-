@@ -1,0 +1,57 @@
+-----Corrected query-------
+
+-----Selected columns------
+SELECT  
+       product_type, 
+       product_category,
+       product_detail,
+       store_location,
+       
+-----query to correct the unit_price format--------
+SUM(CAST(REPLACE(unit_price, ',', '.') AS FLOAT) * transaction_qty) AS total_amount,
+    
+-----aggregated columns to calculate the revenue-----
+
+SUM(transaction_qty) AS number_of_units_sold,
+
+------aggregated columns to count the unique identifiers------
+COUNT(transaction_id) AS number_of_transactions,
+COUNT(DISTINCT store_id) AS number_of_stores,
+
+------Functions to name the dates-----------
+
+DAYNAME(transaction_date) AS day_name,
+MONTHNAME(transaction_date) AS month_name,
+
+------CASE Statement to group the day time----
+ CASE 
+    WHEN transaction_time BETWEEN '06:00:00' AND '11:59:59' THEN 'Morning'
+    WHEN transaction_time BETWEEN '12:00:00' AND '16:59:59' THEN 'Afternoon'
+    WHEN transaction_time BETWEEN '17:00:00' AND '19:59:59' THEN 'Evening'
+    ELSE 'Night'
+  END AS time_of_day,
+  
+ ------CASE statement group the spending type-------
+  CASE 
+    WHEN SUM(CAST(REPLACE(unit_price, ',', '.') AS FLOAT)*transaction_qty) <=15 THEN 'Low_Spender'
+    WHEN SUM(CAST(REPLACE(unit_price, ',', '.') AS FLOAT)*transaction_qty) BETWEEN 16 and 99 THEN 'Medium_Spender'
+    WHEN SUM(CAST(REPLACE(unit_price, ',', '.') AS FLOAT)*transaction_qty) BETWEEN 100 AND 700 THEN 'High_Spender'
+    ELSE 'Very High_Spender'
+  END AS spending_type,
+ 
+FROM
+  "CASE_STUDY"."CASE_SCHEMA"."BRIGHTCOFFEESHOPTABLE"
+
+    --------Group the columns which are not aggregated------
+GROUP BY
+product_type,
+product_category,
+product_detail,
+store_location,
+time_of_day,
+month_name,
+day_name
+
+ORDER BY total_amount
+DESC;
+
