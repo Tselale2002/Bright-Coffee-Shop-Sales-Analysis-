@@ -87,7 +87,7 @@ Another CASE statement grouped customers into spending types based on their tota
 
 The final result set was grouped by product details, store location, day/time, and date fields to prepare for analysis and visualization.
 
-The transformed data was then exported from Snowflake and saved as an Excel file.
+The transformed data was then downloaded from Snowflake and saved as an Excel file.
 
 **Data Analysis**
 
