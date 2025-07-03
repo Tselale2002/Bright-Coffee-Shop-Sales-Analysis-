@@ -99,4 +99,8 @@ Graphs were then exported to CANVA to create dashboards which will be used in th
 
 Presentation was prepared using MicroSoft Power Point and submitted to the relevant official.
 
+**Conclusion**
+
+The detailed analysis and findings of the study are highlighted in the presentation, showcasing key insights on the sales for different months across the three stores. Each section is supported by visualizations and data summaries to provide a clear understanding of the business’s current performance and to guide strategic recommendations aimed at improving revenue and operational efficiency.
+
 ***Thank you***
