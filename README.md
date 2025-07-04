@@ -1,7 +1,7 @@
 # Bright-Coffee-Shop-Sales-Analysis
 # Case Study Project
 
-**Introduction**
+***Introduction***
 
 As a Data Analyst, I have been requested to conduct a study on Bright Coffee Shop Sales, using their transactional data from January 2023 to June 2023. The dataset captures daily sales activity from a local coffee shop and serves as the basis for this case study. The business recently appointed a new CEO, whose strategic objective is to grow revenue and improve product performance. To support this initiative, a data-driven analysis is essential to reveal key patterns, trends, and opportunities within the sales data. My role is to extract actionable insights and present meaningful findings that will assist the CEO in making informed, evidence-based decisions.
 
