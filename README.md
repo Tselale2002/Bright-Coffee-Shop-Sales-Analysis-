@@ -70,7 +70,7 @@ Saved cleaned data as a CSV file for cross-tool compatibility
 
 - Extracted day and month names from transaction_date
 
-CASE statements were used to categorize the following:
+CASE statements were used to categorise the following:
 
 **Time of Day Classification:**
 
