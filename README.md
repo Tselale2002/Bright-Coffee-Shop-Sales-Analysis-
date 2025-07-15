@@ -1,6 +1,6 @@
-#☕ Bright Coffee Shop Sales Analysis
+# ☕ Bright Coffee Shop Sales Analysis
 
-##Case Study Project
+## Case Study Project
 
 **📌 Introduction**
 
@@ -15,13 +15,13 @@ This case study demonstrates how data analytics can be used to drive business gr
 
 The primary objective is to apply analytics, SQL, and data visualization techniques to uncover meaningful insights about Bright Coffee Shop’s operations. Specifically, the analysis aims to:
 
--Identify top-performing products by revenue
+- Identify top-performing products by revenue
 
--Determine the most profitable times of day
+- Determine the most profitable times of day
 
--Reveal sales trends across categories and time intervals
+- Reveal sales trends across categories and time intervals
 
--Provide practical, data-driven recommendations to improve overall sales performance
+- Provide practical, data-driven recommendations to improve overall sales performance
 
 **🛠️ Tools & Technologies Used**
 
@@ -54,21 +54,21 @@ Saved cleaned data as a CSV file for cross-tool compatibility
 
 **2. SQL-Based Transformation in Snowflake**
 
--Data Type Correction: Replaced commas in unit_price and cast to FLOAT
+- Data Type Correction: Replaced commas in unit_price and cast to FLOAT
 
--Revenue Calculation: total_amount = unit_price * transaction_qty
+- Revenue Calculation: total_amount = unit_price * transaction_qty
 
 **Aggregated Metrics: Added KPIs such as:**
 
--number_of_units_sold
+- number_of_units_sold
 
--number_of_transactions
+- number_of_transactions
 
--number_of_stores
+- number_of_stores
 
 **Date Derivation:**
 
--Extracted day and month names from transaction_date
+- Extracted day and month names from transaction_date
 
 CASE statements were used to categorize the following:
 
